@@ -49,8 +49,8 @@ const Navbar = () => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-sm py-3' : 'bg-white py-5'}`}>
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-medical text-white rounded-lg flex items-center justify-center font-bold text-xl">
-            <Activity size={24} />
+          <div className="relative w-10 h-10 flex items-center justify-center">
+            <Image src="/images/logo.png" alt="Logo ADMC" fill sizes="40px" className="object-contain" priority />
           </div>
           <div>
             <h1 className="font-bold text-lg leading-tight text-gray-900">Adhi Dharma</h1>
@@ -647,8 +647,8 @@ const Footer = () => {
           
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-medical text-white rounded-lg flex items-center justify-center font-bold text-xl">
-                <Activity size={24} />
+              <div className="relative w-12 h-12 flex items-center justify-center bg-white rounded-lg p-1">
+                <Image src="/images/logo.png" alt="Logo ADMC" fill sizes="48px" className="object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-lg leading-tight text-white">Adhi Dharma</h3>
