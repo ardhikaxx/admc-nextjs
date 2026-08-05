@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-medical: #0F5BA8;
-  --color-medical-light: #EAF4FF;
+  --color-medical: #31A1AF;
+  --color-medical-light: #EAF6F7;
+  --color-medical-dark: #248491;
   --color-light-gray: #F5F7FA;
 }
 

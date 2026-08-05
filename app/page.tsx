@@ -74,7 +74,7 @@ const Navbar = () => {
             <a href="tel:+6281314091515" className="text-sm font-medium text-gray-700 flex items-center gap-2 hover:text-medical">
               <Phone size={16} /> Hubungi Kami
             </a>
-            <a href="https://wa.me/6282333486600" target="_blank" rel="noreferrer" className="bg-medical hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm">
+            <a href="https://wa.me/6282333486600" target="_blank" rel="noreferrer" className="bg-medical hover:bg-medical-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm">
               Daftar Sekarang
             </a>
           </div>
@@ -136,7 +136,7 @@ const Hero = () => {
             </motion.p>
             
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 pt-2">
-              <a href="https://wa.me/6282333486600" className="bg-medical hover:bg-blue-700 text-white px-8 py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 transition-colors shadow-md">
+              <a href="https://wa.me/6282333486600" className="bg-medical hover:bg-medical-dark text-white px-8 py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 transition-colors shadow-md">
                 <PhoneCall size={18} /> Daftar via WhatsApp
               </a>
               <a href="#layanan" className="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 px-8 py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 transition-colors">
@@ -296,7 +296,7 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{svc.title}</h3>
               <p className="text-gray-600 leading-relaxed mb-6">{svc.desc}</p>
-              <Link href={`/layanan/${svc.slug}`} className="inline-flex items-center gap-2 text-medical font-semibold hover:text-blue-800 transition-colors">
+              <Link href={`/layanan/${svc.slug}`} className="inline-flex items-center gap-2 text-medical font-semibold hover:text-medical-dark transition-colors">
                 Detail Layanan <ChevronRight size={18} />
               </Link>
             </motion.div>

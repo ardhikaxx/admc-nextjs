@@ -174,7 +174,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://wa.me/6282333486600" target="_blank" rel="noreferrer" className="flex-1 bg-medical hover:bg-blue-700 text-white py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-colors">
+                <a href="https://wa.me/6282333486600" target="_blank" rel="noreferrer" className="flex-1 bg-medical hover:bg-medical-dark text-white py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-colors">
                   <PhoneCall size={20} /> Buat Janji Temu
                 </a>
                 <Link href="/#layanan" className="flex-none bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 py-4 px-6 rounded-full font-bold flex items-center justify-center transition-colors">

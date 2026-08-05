@@ -55,7 +55,7 @@ export default function Navbar() {
             <a href="tel:+6281314091515" className="text-sm font-medium text-gray-700 flex items-center gap-2 hover:text-medical">
               <Phone size={16} /> Hubungi Kami
             </a>
-            <a href="https://wa.me/6282333486600" target="_blank" rel="noreferrer" className="bg-medical hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm">
+            <a href="https://wa.me/6282333486600" target="_blank" rel="noreferrer" className="bg-medical hover:bg-medical-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm">
               Daftar Sekarang
             </a>
           </div>
