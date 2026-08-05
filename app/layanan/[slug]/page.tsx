@@ -139,7 +139,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             
             {/* Image Section */}
             <div className="relative aspect-square lg:aspect-auto bg-gray-100 h-full w-full">
-              <Image src={service.image} alt={service.title} fill className="object-cover" />
+              <Image src={service.image} alt={service.title} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:hidden"></div>
               <div className="absolute bottom-6 left-6 text-white lg:hidden">
                 <h1 className="text-3xl font-bold mb-2">{service.title}</h1>
