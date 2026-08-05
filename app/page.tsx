@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, CheckCircle2, Phone, MapPin, Clock, Star, Activity, Heart, Shield, Stethoscope, Microscope, Pill, Ambulance, Users, Calendar, PhoneCall, ChevronRight, Plus, Minus, ArrowRight } from 'lucide-react';
 import CountUp from 'react-countup';
@@ -266,13 +267,13 @@ const About = () => {
 const Services = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const services = [
-    { icon: <Stethoscope size={32} />, title: "Poli Umum", desc: "Pemeriksaan kesehatan umum, konsultasi medis, dan pengobatan penyakit ringan hingga sedang." },
-    { icon: <Activity size={32} />, title: "Poli Gigi", desc: "Perawatan kesehatan gigi dan mulut profesional oleh dokter gigi berpengalaman." },
-    { icon: <Heart size={32} />, title: "Poli Estetika", desc: "Layanan perawatan kecantikan dan kesehatan kulit medis terpercaya." },
-    { icon: <Ambulance size={32} />, title: "Unit Gawat Darurat", desc: "Penanganan kasus kegawatdaruratan medis yang buka 24 jam setiap hari." },
-    { icon: <Microscope size={32} />, title: "Laboratorium", desc: "Fasilitas cek darah, urine, dan tes laboratorium lainnya untuk diagnosis akurat." },
-    { icon: <Pill size={32} />, title: "Layanan Farmasi", desc: "Apotek lengkap yang menyediakan obat-obatan berkualitas sesuai resep dokter." },
-    { icon: <Shield size={32} />, title: "Rawat Inap", desc: "Fasilitas rawat inap yang nyaman dan bersih untuk pemulihan optimal pasien." },
+    { slug: "poli-umum", icon: <Stethoscope size={32} />, title: "Poli Umum", desc: "Pemeriksaan kesehatan umum, konsultasi medis, dan pengobatan penyakit ringan hingga sedang." },
+    { slug: "poli-gigi", icon: <Activity size={32} />, title: "Poli Gigi", desc: "Perawatan kesehatan gigi dan mulut profesional oleh dokter gigi berpengalaman." },
+    { slug: "poli-estetika", icon: <Heart size={32} />, title: "Poli Estetika", desc: "Layanan perawatan kecantikan dan kesehatan kulit medis terpercaya." },
+    { slug: "ugd", icon: <Ambulance size={32} />, title: "Unit Gawat Darurat", desc: "Penanganan kasus kegawatdaruratan medis yang buka 24 jam setiap hari." },
+    { slug: "laboratorium", icon: <Microscope size={32} />, title: "Laboratorium", desc: "Fasilitas cek darah, urine, dan tes laboratorium lainnya untuk diagnosis akurat." },
+    { slug: "farmasi", icon: <Pill size={32} />, title: "Layanan Farmasi", desc: "Apotek lengkap yang menyediakan obat-obatan berkualitas sesuai resep dokter." },
+    { slug: "rawat-inap", icon: <Shield size={32} />, title: "Rawat Inap", desc: "Fasilitas rawat inap yang nyaman dan bersih untuk pemulihan optimal pasien." },
   ];
 
   return (
@@ -295,9 +296,9 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{svc.title}</h3>
               <p className="text-gray-600 leading-relaxed mb-6">{svc.desc}</p>
-              <a href="https://wa.me/6282333486600" className="inline-flex items-center gap-2 text-medical font-semibold hover:text-blue-800 transition-colors">
+              <Link href={`/layanan/${svc.slug}`} className="inline-flex items-center gap-2 text-medical font-semibold hover:text-blue-800 transition-colors">
                 Detail Layanan <ChevronRight size={18} />
-              </a>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
@@ -740,7 +741,6 @@ const Footer = () => {
 export default function Home() {
   return (
     <main className="w-full font-sans">
-      <Navbar />
       <Hero />
       <Features />
       <About />
@@ -753,7 +753,6 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <CTA />
-      <Footer />
     </main>
   );
 }
