@@ -160,7 +160,7 @@ const Hero = () => {
             className="flex-1 relative w-full"
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-[4/3] shadow-lg">
-              <Image src="/images/hero-doctor.jpg" alt="Dokter Profesional" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" priority />
+              <Image src="/images/hero.png" alt="Dokter Profesional" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" priority />
             </div>
             
             {/* Floating Stats */}
