@@ -698,9 +698,9 @@ const Footer = () => {
             <h4 className="text-white font-bold">Informasi Kontak</h4>
             <div className="flex items-start gap-3">
               <MapPin size={20} className="text-medical shrink-0 mt-1" />
-              <p className="text-sm text-gray-400 leading-relaxed">
+              <a href="https://maps.app.goo.gl/TUcRb7GdC2dzaiX16" target="_blank" rel="noreferrer" className="text-sm text-gray-400 leading-relaxed hover:text-white transition-colors">
                 Jl. dr. Cipto Mangunkusumo No. 3, Lumbung, Badean, Kec. Bondowoso, Kab. Bondowoso, Jawa Timur 68214
-              </p>
+              </a>
             </div>
             <div className="flex items-center gap-3">
               <Phone size={20} className="text-medical shrink-0" />
