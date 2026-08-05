@@ -49,7 +49,7 @@ const Navbar = () => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-sm py-3' : 'bg-white py-5'}`}>
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="relative w-10 h-10 flex items-center justify-center">
+          <div className="relative w-10 h-10 flex items-center justify-center rounded-full overflow-hidden">
             <Image src="/images/logo.png" alt="Logo ADMC" fill sizes="40px" className="object-contain" priority />
           </div>
           <div>
@@ -647,7 +647,7 @@ const Footer = () => {
           
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="relative w-12 h-12 flex items-center justify-center bg-white rounded-lg p-1">
+              <div className="relative w-12 h-12 flex items-center justify-center bg-white rounded-full overflow-hidden p-1">
                 <Image src="/images/logo.png" alt="Logo ADMC" fill sizes="48px" className="object-contain" />
               </div>
               <div>
