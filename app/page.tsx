@@ -427,9 +427,11 @@ const Insurance = () => {
                   <Image src="/images/bpjs-logo.png" alt="Logo BPJS Kesehatan" fill sizes="160px" className="object-contain" />
                 </div>
               </div>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow w-full sm:w-56 h-36 flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
+              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow w-full sm:w-56 h-36 flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-1 h-full bg-[#003C7A]"></div>
-                <span className="font-extrabold text-2xl text-[#003C7A] text-center leading-none group-hover:scale-105 transition-transform duration-300">Mandiri<br/><span className="text-[#FFB500]">InHealth</span></span>
+                <div className="relative w-full h-12 transition-transform duration-300 group-hover:scale-105">
+                  <Image src="/images/inhealth-logo.png" alt="Logo Mandiri InHealth" fill sizes="160px" className="object-contain" />
+                </div>
               </div>
             </div>
             
