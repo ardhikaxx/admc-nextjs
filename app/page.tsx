@@ -399,22 +399,39 @@ const Facilities = () => {
 
 const Insurance = () => {
   return (
-    <section className="py-16 border-b border-gray-100">
+    <section className="py-20 bg-white">
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between bg-medical-light rounded-3xl p-8 md:p-12 gap-8">
-          <div className="max-w-xl text-center md:text-left">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Kerja Sama Asuransi</h3>
-            <p className="text-gray-700 text-lg">
-              Adhi Dharma Medical Center melayani pasien umum, peserta <span className="font-bold">BPJS Kesehatan</span>, dan peserta <span className="font-bold">Mandiri InHealth</span> sesuai dengan ketentuan yang berlaku.
-            </p>
-          </div>
-          <div className="flex items-center gap-6 flex-wrap justify-center">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white/50 w-40 h-24 flex items-center justify-center">
-              <span className="font-extrabold text-2xl text-green-600">BPJS</span>
+        <div className="bg-gray-50 rounded-3xl border border-gray-100 p-10 md:p-16 relative overflow-hidden">
+          {/* Decorative element */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-medical-light rounded-bl-full -z-0 opacity-50"></div>
+          
+          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+            
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm mb-6">
+                <Shield className="text-medical" size={18} />
+                <span className="text-sm font-semibold text-gray-700 tracking-wide uppercase">Mitra Asuransi</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                Layanan Asuransi Kesehatan
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Adhi Dharma Medical Center berkomitmen memberikan akses kesehatan yang mudah dan transparan. Kami melayani pasien umum, serta menerima peserta <span className="font-semibold text-gray-900">BPJS Kesehatan</span> dan <span className="font-semibold text-gray-900">Mandiri InHealth</span>.
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white/50 w-40 h-24 flex items-center justify-center">
-              <span className="font-extrabold text-xl text-blue-900 text-center">Mandiri<br/>InHealth</span>
+            
+            <div className="w-full lg:w-1/2 flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-6">
+              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow w-full sm:w-56 h-36 flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-1 h-full bg-green-500"></div>
+                <span className="font-extrabold text-3xl text-green-600 group-hover:scale-105 transition-transform duration-300">BPJS</span>
+                <span className="text-xs font-semibold text-gray-400 mt-2 tracking-widest uppercase">Kesehatan</span>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow w-full sm:w-56 h-36 flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#003C7A]"></div>
+                <span className="font-extrabold text-2xl text-[#003C7A] text-center leading-none group-hover:scale-105 transition-transform duration-300">Mandiri<br/><span className="text-[#FFB500]">InHealth</span></span>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
